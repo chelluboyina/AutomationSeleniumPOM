@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Opencart App Test Regression Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <test thread-count="4" parallel="tests" name="HomePage(failed)" verbose="4">
+    <classes>
+      <class name="com.softwaretestingboard.magento.test.HomePageTest">
+        <methods>
+          <include name="HomePageURLTest"/>
+          <include name="tearDown"/>
+          <include name="istypeOfSalesExisted"/>
+          <include name="isSearchExisted"/>
+          <include name="setUp"/>
+          <include name="HomePageTitleTest"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.test.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage(failed) -->
+  <test thread-count="4" parallel="tests" name="WhatsNewPage(failed)" verbose="4">
+    <classes>
+      <class name="com.softwaretestingboard.magento.test.WhatsNewTest">
+        <methods>
+          <include name="isJacketExisted"/>
+          <include name="tearDown"/>
+          <include name="whatsNewPageTitleTest"/>
+          <include name="isNewWomenExisted"/>
+          <include name="isHoodiesExisted"/>
+          <include name="isNewMenExisted"/>
+          <include name="NavigatetoWhatsNewPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.test.WhatsNewTest -->
+    </classes>
+  </test> <!-- WhatsNewPage(failed) -->
+  <test thread-count="4" parallel="tests" name="SignInDataDriven(failed)" verbose="4">
+    <classes>
+      <class name="com.softwaretestingboard.magento.test.SigninScreenTest">
+        <methods>
+          <include name="doLoginTestWithExcel"/>
+          <include name="tearDown"/>
+          <include name="NavigatetoSignInPage"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.softwaretestingboard.magento.test.SigninScreenTest -->
+    </classes>
+  </test> <!-- SignInDataDriven(failed) -->
+</suite> <!-- Failed suite [Opencart App Test Regression Suite] -->
